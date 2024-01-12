@@ -1,6 +1,7 @@
 import React from "react"
 
-const Card = () => {
+const Card = ({ hand }) => {
+  // Component logic using 'hand'
   return (
     <div className="handStyles">
       {hand.map((card, index) => {
@@ -13,3 +14,5 @@ const Card = () => {
     </div>
   )
 }
+// added export default Card to fix error
+export default Card
